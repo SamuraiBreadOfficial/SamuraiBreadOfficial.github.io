@@ -9,70 +9,76 @@
         * {
             box-sizing: border-box;
         }
-
+    
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #121212;
             color: #ffffff;
         }
+    
         html {
-            scroll-behavior: smooth; /* Płynne przewijanie */
+            scroll-behavior: smooth;
         }
+    
         header {
             background-color: #1e1e1e;
-            padding: 20px 0;
+            padding: 20px 10px;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.5);
         }
-
+    
         header img {
-            width: 150px; /* Adjust the logo size */
+            width: 100%;
+            max-width: 150px;
+            height: auto;
             border-radius: 8px;
         }
-
+    
         header h1 {
-            margin: 0;
+            margin: 10px 0 0 0;
             font-size: 2rem;
             color: #ff5733;
         }
-
+    
         nav {
             background-color: #2b2b2b;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 40px;
-            padding: 15px 0;
+            gap: 30px;
+            padding: 15px 10px;
         }
-
+    
         nav a {
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
+            font-size: 1rem;
         }
-
+    
         nav a:hover {
             color: #ff5733;
         }
-
+    
         section {
-            padding: 50px 20px;
+            padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
         }
-
+    
         h2 {
             font-size: 2rem;
             margin-bottom: 20px;
             color: #ff5733;
         }
-
+    
         p {
             font-size: 1.1rem;
             line-height: 1.6;
         }
-
+    
         .download-btn {
             display: inline-block;
             background-color: #ff5733;
@@ -84,26 +90,49 @@
             margin-top: 20px;
             transition: background-color 0.3s ease;
         }
-
+    
         .download-btn:hover {
             background-color: #ffcbbd;
             color: #121212;
         }
-
+    
         footer {
             background-color: #1e1e1e;
             color: #aaa;
             text-align: center;
-            padding: 20px;
+            padding: 20px 10px;
             font-size: 0.9rem;
             margin-top: 50px;
         }
-
-        /* Responsive */
-        @media (max-width: 600px) {
+    
+        /* === Responsywność === */
+        @media (max-width: 768px) {
             nav {
                 flex-direction: column;
-                gap: 15px;
+                gap: 10px;
+            }
+    
+            header h1 {
+                font-size: 1.5rem;
+            }
+    
+            section {
+                padding: 30px 15px;
+            }
+    
+            h2 {
+                font-size: 1.6rem;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+    
+            .download-btn {
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+                font-size: 1rem;
             }
         }
     </style>
