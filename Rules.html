@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SamuraiBread's Addons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo.png" type="icon">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        html {
+            scroll-behavior: smooth; /* Płynne przewijanie */
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        header img {
+            width: 150px; /* Adjust the logo size */
+            border-radius: 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #ff5733;
+        }
+
+        nav {
+            background-color: #2b2b2b;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5733;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff5733;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #ff5733;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #ffcbbd;
+            color: #121212;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <img src="Images/logo.png" alt="SamuraiBread Logo">
+        <h1>SamuraiBread's Addons</h1>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Home.html#about">About</a>
+        <a href="Downloads.html">Downloads</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Rules.html">ToS</a>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the official site for SamuraiBread's addon downloads! Here, you'll discover a collection of high-quality addons designed to enhance your Minecraft: Bedrock Edition experience.</p>
+        <p>In addition to the addons featured on the <a href="https://discord.gg/3XdUhe9Rn3" style="color: #ff5733;">EndfallenSMP</a> server, this site also hosts a variety of exciting projects that go beyond the realm of the SMP, offering unique content for players seeking new adventures and creative possibilities.</p>
+        <p>Explore the different addons and find the perfect additions to your Minecraft world!</p>
+        </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>SamuraiBread is a passionate addon developer focused on bringing creativity and functionality to Minecraft: Bedrock Edition. Every addon is tested, balanced, and ready to enhance your adventures.</p>
+    </section>
+
+    <section id="downloads">
+        <h2>Downloads</h2>
+        <p>Choose an addon to download:</p>
+    
+        <!-- Addon 1 -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <img src="Images/era.png" alt="Endfallen's Races Thumbnail" style="width: 650px; border-radius: 12px;">
+            <h3>Endfallen's Races v1.0.1</h3>
+            <p>Endfallen's Races adds Elves, Dwarfs, Avians, Felines, powerful gear & more! By SamuraiBread for EndfallenSMP (MC:BE RP Realm).</p>
+            <a href="SamuraiTools.mcaddon" class="download-btn" download>Download</a>
+        </div>    
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions, suggestions, or issues with the addons, feel free to reach out:</p>
+        <ul>
+            <li>Email: <a href="mailto:samuraibreadi@gmail.com" style="color: #ff5733;">samuraibreadi@gmail.com</a></li>
+            <li>Discord: <a href="https://discord.com/users/538318091608784908" style="color: #ff5733;">@samuraibread</a></li>
+            <li>Discord Server: Soon</li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2025 SamuraiBread. All rights reserved.
+    </footer>
+</body>
+</html>
