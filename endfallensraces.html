@@ -104,14 +104,23 @@
                 font-size: 0.9rem;
                 margin-top: 50px;
             }
+
+            .separator {
+                width: 80%;       /* dostosowuje się do szerokości ekranu */
+                max-width: 600px; /* nie przekroczy 600px na dużych ekranach */
+                height: 2px;
+                background-color: #444;
+                margin: 40px auto;
+            }
+
         
             /* === Responsywność === */
             @media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
+                nav {
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                }
         
                 header h1 {
                     font-size: 1.5rem;
@@ -135,6 +144,7 @@
                     padding: 12px;
                     font-size: 1rem;
                 }
+
             }
         </style>
         <meta name="google-site-verification" content="UNJBc2-4umEdROT98HuAU8BNavkqnlpyv0f2Xv4BERY" />
@@ -154,16 +164,54 @@
         </nav>
         
         <section id="endfallensraces">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="Images/era.png" alt="Endfallen's Races Thumbnail" style="width: 100%; max-width: 650px; height: auto; border-radius: 12px;">
+            </div>
+            <div class="separator"></div>
             <div style="text-align: left; margin-bottom: 40px;">
-                <img src="Images/era.png" alt="Endfallen's Races Thumbnail" style="width: 650px; border-radius: 12px;">
                 <h1 style="color: #3a0055; text-align: center;">About</h1>
-                <p>Discover the world of <strong>Endfallen's Races</strong> — an exciting add-on that brings unique, playable races into your game:</p>
-                <p>- Elves</p>
-                <p>- Dwarves</p>
-                <p>- Felines</p>
-                <p>- Avians</p>
-                <p>Each race offers exclusive abilities that redefine how you play. See in the dark and leap sky-high as an Elf, soar through the skies as an Avian, or tunnel like never before with the unmatched mining speed of a Dwarf. Even the mysterious Felines have their own surprises.</p>
-                <p>Inspired by the spirit of the "Origins Mod," this add-on delivers fresh gameplay, endless roleplay potential, and a whole new way to experience Minecraft. Dive in, choose your race, and let your story begin!</p>
+                <p>
+                    Discover the world of <strong>Endfallen's Races</strong> — a feature-rich add-on that introduces four unique, playable races into Minecraft: Bedrock Edition:
+                </p>
+                <ul>
+                    <li><strong>Elves</strong> – agile beings with enhanced jump height, night vision, and mastery over magic</li>
+                    <li><strong>Dwarves</strong> – stout miners with superior mining speed and specialized gear for underground survival</li>
+                    <li><strong>Felines</strong> – fast, stealthy hunters with no fall damage, permanent Speed II, and the powerful Feline Dash</li>
+                    <li><strong>Avians</strong> – winged humanoids capable of gliding and moving swiftly through the skies</li>
+                </ul>
+                <p>
+                    Each race comes with its own <strong>custom armor sets</strong>, <strong>racial abilities</strong>, and <strong>lore-inspired traits</strong> that enhance roleplay and combat alike. From the sleek Feline Stalker Guard to the high-tier Dwarven equipment, your gear reflects your origins.
+                </p>
+                <p>
+                    Central to the experience is the <strong>Race Orb</strong> — a powerful item that lets players permanently select their race through an intuitive in-game menu. Crafted using a rare <strong>Spirit’s Heart</strong> (dropped by the elusive Spirit entity) alongside obsidian and sculk, the Race Orb is the gateway to a fully customized adventure.
+                </p>
+                <p>
+                    The add-on also introduces a modular crafting system, centered around the <strong>Redstone Component</strong> — a vital material used in creating powerful equipment such as the <strong>Heavy Hammer</strong> and <strong>Redstone Component Armor Set</strong>. Supporting items like the Reinforced Iron Handle and Heavy Hammer Head make crafting immersive and rewarding.
+                </p>
+                <p>
+                    Music lovers will appreciate the overhauled <strong>Music System</strong>, featuring the <strong>Music Player</strong> and exclusive ERA-themed discs. Convert vanilla music discs or use new custom ones like <em>Creator</em>, <em>Precipice</em>, and <em>Saccharine</em>, then play them in-game to add atmosphere to your journeys.
+                </p>
+                <p>
+                    With optimized performance for both mobile and console players, a polished UI, and extensive balancing, <strong>Endfallen's Races</strong> is more than just a cosmetic pack — it's a full-featured expansion of your Minecraft experience.
+                </p>
+                <p>
+                    Inspired by the spirit of the "Origins Mod," this add-on brings fresh gameplay mechanics, deep character identity, and endless potential for storytelling. Choose your destiny, forge your legend, and dive into the rich world of Endfallen.
+                </p>
+            </div>
+            <div class="separator"></div>
+        </section>
+        <section id="changes" style="display: block;">
+            <h1 style="text-align: center; color: #3a0055;">Changes in v1.0.1</h1>
+            <div style="margin-left: 200px;">
+            <li>Debuffed Feline Race</li>
+            <li>Fixed Feline Ears</li>
+            <li>Fixed Minor Menu Bug</li>
+            <li>Fixed Most of the Console Errors</li>
+            <li>Fixed Hammer Recipe Not Showing Up In The Crafting Table</li>
+            </div>
+            <div style="text-align: center;">
+            <a href="" class="download-btn">Download .mcaddon</a>
+            <a href="" class="download-btn">Download .zip</a>
             </div>
         </section>
         <footer>
