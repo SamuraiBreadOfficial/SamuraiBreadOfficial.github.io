@@ -108,10 +108,11 @@
         /* === Responsywność === */
         @media (max-width: 768px) {
             nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-    
+            display: flex;
+            flex-wrap: wrap; /* zawijanie wierszy */
+            justify-content: center;
+            gap: 10px;
+            }    
             header h1 {
                 font-size: 1.5rem;
             }
@@ -136,6 +137,8 @@
             }
         }
     </style>
+    <meta name="google-site-verification" content="UNJBc2-4umEdROT98HuAU8BNavkqnlpyv0f2Xv4BERY" />
+
 </head>
 <body>
     <header>
@@ -152,7 +155,7 @@
         <a href="Rules.html">ToS</a>
     </nav>
 
-    <section id="endfallensraces">
+    <section id="endfall">
         <h2>Downloads</h2>
         <p>Choose an addon to download:</p>
     
